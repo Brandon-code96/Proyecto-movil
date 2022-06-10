@@ -60,7 +60,9 @@ class _Buttons extends StatelessWidget {
                     primary: Colors.white,
                     textStyle: const TextStyle(fontSize: 20),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushReplacementNamed(context, 'login');
+                  },
                   child: text,
                 ),
               ],
