@@ -99,7 +99,7 @@ class _LoginFomr extends StatelessWidget{
                 loginForm.isLoading = true;
                 await Future.delayed(Duration(seconds: 2));
                 loginForm.isLoading = false;
-                Navigator.pushReplacementNamed(context, 'home');
+                Navigator.pushReplacementNamed(context, 'category');
               }
             )
           ],
