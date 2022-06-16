@@ -36,11 +36,16 @@ class CategoryScreen extends StatelessWidget{
                   child: CustomSwiper(size: size),
                 ),
                 const Padding(padding: EdgeInsets.only(top: 20)),
-                const Text( 
-                  'CATEGORIAS',
-                  overflow: TextOverflow.ellipsis,
-                  textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 20),
+                TextButton(
+                  onPressed: () { 
+                    Navigator.pushReplacementNamed(context, 'restaurantes');
+                  },
+                  child:const Text( 
+                    'CATEGORIAS',
+                    overflow: TextOverflow.ellipsis,
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 20),
+                  ),
                 ),
               ],
             ),
