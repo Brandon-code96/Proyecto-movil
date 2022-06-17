@@ -11,7 +11,7 @@ class GridButton extends StatelessWidget {
       heroTag: 1,
       elevation: 0,
       backgroundColor: Colors.grey[300],
-      onPressed: () { print('objectsdf'); },
+      onPressed: () { Navigator.pushReplacementNamed(context, 'detailRestaurante'); },
       child: Card(
         clipBehavior:Clip.antiAlias,
         shape: RoundedRectangleBorder(
@@ -23,7 +23,7 @@ class GridButton extends StatelessWidget {
           children: [
             const FadeInImage(
               placeholder: AssetImage('assets/loading.gif'), 
-              image: AssetImage('assets/restaurante-1.jpg'),
+              image: AssetImage('assets/restaurante/restaurante-1.jpg'),
               fit: BoxFit.cover,
             ),
             Container(
