@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget{
         'restaurantes': (_)=> const RestaurantesSwipper(),
         'hospedajes': (_)=>const HospedajeScreen(),
         'detailRestaurante': (_)=>const DetailRestauranteScreen(),
+        'mapa': (_)=>const MapaScreen(),
       },
       theme: ThemeData.light().copyWith(
         scaffoldBackgroundColor: Colors.grey[300],

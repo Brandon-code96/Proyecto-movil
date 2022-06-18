@@ -30,7 +30,9 @@ class DetailRestauranteScreen extends StatelessWidget{
                   icon:const Icon(Icons.home,  size: 40)
                 ),
                 IconButton(
-                  onPressed: (){}, 
+                  onPressed: (){
+                    Navigator.pushReplacementNamed(context, 'mapa');
+                  }, 
                   icon:const Icon(Icons.add_location, size: 40)
                 ),
                 IconButton(
