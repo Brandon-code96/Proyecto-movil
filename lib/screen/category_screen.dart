@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:card_swiper/card_swiper.dart';
 
+import '../widgets/widgets.dart';
+
 class CategoryScreen extends StatelessWidget{
   const CategoryScreen({Key? key}):super (key: key);
   @override
@@ -25,6 +27,7 @@ class CategoryScreen extends StatelessWidget{
         title: const Text('Categorias'),
         elevation: 0,
       ),
+      drawer:const MenuDrawer(),
       body: Column(
         children: [
           Padding(
